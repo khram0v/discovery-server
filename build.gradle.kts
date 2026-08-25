@@ -18,7 +18,7 @@ repositories {
     mavenCentral()
 }
 
-extra["springCloudVersion"] = "2025.1.2"
+val springCloudVersion = "2025.1.2"
 
 dependencies {
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
@@ -30,7 +30,7 @@ dependencies {
 
 dependencyManagement {
     imports {
-        mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+        mavenBom("org.springframework.cloud:spring-cloud-dependencies:$springCloudVersion")
     }
 }
 
