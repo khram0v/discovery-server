@@ -3,6 +3,10 @@
 A minimal Eureka service registry for the Gym CRM microservices ecosystem (`gym-crm` main service +
 `trainer-workload-service`).
 
+> **Status:** `gym-crm` and `trainer-workload-service` now communicate asynchronously over ActiveMQ and no longer
+> register with or query this registry. This module is kept in case a future service needs HTTP-based service
+> discovery; it's otherwise safe to leave stopped in local/dev setups.
+
 ## Tech Stack
 
 - Java 25
